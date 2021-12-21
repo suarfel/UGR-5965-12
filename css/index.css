@@ -28,7 +28,6 @@ header {
     font-size: 1.5em;
     top: 0;
     left: 0;
-    height: 100%;
     width: 15rem;
     background: #0f0c0c;
     display: flex;
@@ -45,6 +44,11 @@ header .user img {
     object-fit: cover;
     margin-bottom: 1rem;
     border: .5rem solid rgb(85, 64, 25);
+}
+
+.icon {
+    height: 40;
+    width: 40;
 }
 
 header .navbar {
@@ -86,16 +90,6 @@ header .navbar ul li a {
     padding-right: 6rem;
 }
 
-.btn {
-    padding: .6rem 2rem;
-    background-color: rgb(56, 41, 41);
-    margin-top: 2rem;
-    cursor: pointer;
-    margin-left: 40rem;
-    font-size: 1rem;
-    border-radius: 5rem;
-}
-
 footer {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -103,22 +97,30 @@ footer {
     height: 70px;
     background-color: #323030;
     padding: 2rem;
-    color: blue;
 }
 
-
-/* 
-@media screen and (max-width:850px) {
-    html {
-        font-size: 80%;
-    }
+.ham-button {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0.5rem;
+    background-color: black;
+    color: white;
+    z-index: 3;
 }
 
-@media screen and (max-width:550px) {
-    html {
-        font-size: 50%;
+@media screen and (max-width :880px) {
+    .ham-button {
+        display: block;
     }
-    header .navbar a {
-        font-size: 12px;
+    .header {
+        display: none;
     }
-} */
+    .header--visible {
+        display: flex;
+    }
+    body {
+        padding: 0px;
+    }
+}
