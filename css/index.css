@@ -10,11 +10,11 @@
     text-transform: capitalize;
 }
 
-html {
+.parent {
     background-color: rgb(33, 34, 34);
 }
 
-body {
+.content {
     background: rgb(29, 26, 26);
     padding-left: 15rem;
     min-height: 100vh;
@@ -23,7 +23,7 @@ body {
     grid-template-rows: 1fr auto;
 }
 
-header {
+.header {
     position: fixed;
     font-size: 1.5em;
     top: 0;
@@ -35,9 +35,10 @@ header {
     justify-content: center;
     flex-flow: column;
     text-align: center;
+    height: 100%;
 }
 
-header .user img {
+.header .user .my_photo {
     height: 8rem;
     width: 8rem;
     border-radius: 50%;
@@ -51,11 +52,11 @@ header .user img {
     width: 40;
 }
 
-header .navbar {
+.header .navbar {
     width: 110%;
 }
 
-header .navbar ul {
+.header .navbar ul {
     list-style: none;
     padding: 16px 48px 0;
 }
@@ -73,24 +74,24 @@ header .navbar ul li a {
     flex-flow: column;
 }
 
-.Home h1 {
+.home_head1 {
     font-size: 5rem;
     padding-left: 6rem;
 }
 
-.Home h3 {
+.home_head3 {
     font-size: 2.5rem;
     padding-left: 6rem;
 }
 
-.Home p {
+.home_p1 {
     padding-top: 2rem;
     font-size: 1rem;
     padding-left: 6rem;
     padding-right: 6rem;
 }
 
-footer {
+.foot_bottom {
     display: grid;
     grid-template-columns: 1fr auto;
     width: 100%;
@@ -120,7 +121,7 @@ footer {
     .header--visible {
         display: flex;
     }
-    body {
+    .content {
         padding: 0px;
     }
 }

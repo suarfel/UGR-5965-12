@@ -1,4 +1,4 @@
-.About div h1 {
+.About_head1 {
     text-align: center;
     color: rgb(184, 145, 145);
     font-size: 4rem;
@@ -13,49 +13,13 @@
     padding-left: 6rem;
 }
 
-.About .info p {
+.About .info .attribute {
     padding: 0.8rem;
     font-size: 1.5rem;
     font-weight: normal;
 }
 
-.About .info p span {
+.attribute .value {
     font-weight: 700;
     padding: .5rem;
-}
-
-footer {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    width: 100%;
-    height: 70px;
-    background-color: #323030;
-    padding: 2rem;
-    color: blue;
-}
-
-.ham-button {
-    display: none;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    margin: 0.5rem;
-    background-color: black;
-    color: white;
-    z-index: 3;
-}
-
-@media screen and (max-width :880px) {
-    .ham-button {
-        display: block;
-    }
-    .header {
-        display: none;
-    }
-    .header--visible {
-        display: flex;
-    }
-    body {
-        padding: 0px;
-    }
 }

@@ -1,4 +1,4 @@
-.Achievement div h1 {
+.skills_head1 {
     text-align: center;
     color: rgb(184, 145, 145);
     font-size: 4rem;
@@ -7,17 +7,7 @@
     margin: 0 6rem;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    width: 100%;
-    height: 70px;
-    background-color: #323030;
-    padding: 2rem;
-    color: blue;
-}
-
-.progresses img {
+.progresses .icon_images {
     height: 10rem;
     width: 10rem;
     padding-left: 1rem;
@@ -26,18 +16,20 @@ footer {
 }
 
 .progresses {
-    padding: 10rem;
+    padding-right: 5rem;
+    padding-left: 10rem;
+    padding-top: 10rem;
     display: grid;
     grid-template-rows: auto;
 }
 
-.progresses div {
+.progresses .images_text {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .progressBarWrapper {
-    width: 400px;
+    width: 300px;
     height: 50px;
     background-color: black;
 }
